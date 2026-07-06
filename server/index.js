@@ -29,6 +29,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/lua-ai-co
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/ai', require('./routes/ai'));
+app.use('/api/roblox-ai', require('./routes/roblox-ai'));
 app.use('/api/subscription', require('./routes/subscription'));
 app.use('/api/screen-share', require('./routes/screen-share'));
 app.use('/api/jokes', require('./routes/jokes'));

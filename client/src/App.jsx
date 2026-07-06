@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Pricing from './pages/Pricing';
 import JokeGenerator from './pages/JokeGenerator';
 import RobloxUIGenerator from './pages/RobloxUIGenerator';
+import AIRobloxUIGenerator from './pages/AIRobloxUIGenerator';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
@@ -18,6 +19,14 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/jokes" element={<JokeGenerator />} />
         <Route path="/roblox-ui" element={<RobloxUIGenerator />} />
+        <Route 
+          path="/ai-roblox-ui" 
+          element={
+            <PrivateRoute>
+              <AIRobloxUIGenerator />
+            </PrivateRoute>
+          } 
+        />
         <Route 
           path="/" 
           element={
