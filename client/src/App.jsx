@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Pricing from './pages/Pricing';
 import JokeGenerator from './pages/JokeGenerator';
+import RobloxUIGenerator from './pages/RobloxUIGenerator';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/jokes" element={<JokeGenerator />} />
+        <Route path="/roblox-ui" element={<RobloxUIGenerator />} />
         <Route 
           path="/" 
           element={
